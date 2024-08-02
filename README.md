@@ -30,6 +30,13 @@ The Guardians are tasked with addressing only the most serious criminal activiti
 ![some alt text](https://i.postimg.cc/Gpnp4Twk/3801722614804-pic.jpg)
 ![some alt text](https://i.postimg.cc/nc6FW9L6/3811722614808-pic.jpg)
 
+# EDR
+![some alt text](https://i.postimg.cc/DwrJF38f/3821722624482-pic.jpg)
+
+# Route 
+![some alt text](https://i.postimg.cc/3wpHz3R9/Screenshot-2024-08-02-at-3-12-20-PM.png)
+![some alt text](https://i.postimg.cc/BbZ98DCw/Screenshot-2024-08-02-at-3-12-31-PM.png)
+
 
 
 
