@@ -39,10 +39,19 @@ The Guardians are tasked with addressing only the most serious criminal activiti
 2. User will be able to edit and see the details of guardians, including weaponary, systme, version, anti-cybersecurity system, and defense information. 
 3. User only able to acces editing and see guardian information after signing in. 
 4. system is able to sign up new employees for credentials. 
-5. For 
+5. In detail of the list of guardians I want to see pictures of what the guardians look like.
+6. I want there to be buttons where I can go back to the last stage i was at/or home page. 
+7. When username or password is incorrect i want to be informed, when correct I want to go to the control panel.  
+8. when sigining up two password have to match otherwise let me know, it has to be in email format to sign up otherwise let me know. 
+9. When registering new guardian when click save i want to be informed is saved correctly. 
+10. The amount of robot will be caped at 36, when more then that let me know. 
+
 
 ## Stretch Goals
 1. Integrate Chat GPT API into registration system. 
+2. put voice over like when you sign into your account it say some cool stuff like "Welcome to Harbor-Berlin central command". 
+3. When adding an new robot and saved succesfully say "welcome to the family atlas #33" things like that. 
+4. Password recovery through email 
 
 
 
