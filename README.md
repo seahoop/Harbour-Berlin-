@@ -65,19 +65,80 @@ The Guardians are tasked with addressing only the most serious criminal activiti
 - Write welcoming words, with Habour-Berlin logo and name. 
 - link for employee sign in, and an link for employee to sign up. 
 - if there is an question, chat gpt is there to help with API integration. 
+- Clickable and jumps to the directed page 
 ### Sign in page 
--
+- when enter right username and password trasnfer to contorl panel. 
+- if password or username wrong make it known. 
+
 ### Sign up page 
+- email have to be an valid email otherwise make it known 
+- password and confirm password must be the smae otherwise make it known. 
+- when eveyrthing in place and correct press sign up, and new user registered in database. 
+
 
 ### After sign in new guardian and guardians list page 
+- Show the name of each guardian registered. 
+- on each line there will be an clickable details, and edit option. 
+- when click details all detail will be shown without edit option. 
+- when click on edit all detail will be shown in an format which is editable, and when clicked on update all information updates in database with new informaiton. 
 
 ### Register new Guardian page
-
-
-### Guardians list 
+- Enter everycolumn of infromation otherwise unable to register is shown. 
+- when all information put in and press save, the new guardian is registered. 
+- the guardians will be capped at 36, more then 36 wont be able to register. 
 
 
 # Self Paced Schedule
+### August 2nd
+- Task: Set up project repository and initialize the project
+- Create project structure
+- Install necessary dependencies
+- Set up version control
+### August 3rd
+- Task: Develop Landing Page
+- Create welcoming words, Harbour-Berlin logo, and name
+- Add links for employee sign-in and sign-up
+### August 4th
+- Task: Develop Sign-In Page
+- Create form for username and password input
+- Implement functionality to validate credentials and navigate to the control panel
+- Display error messages for incorrect credentials
+### August 5th
+- Task: Develop Sign-Up Page
+- Create form for email, password, and confirm password
+- Validate email format and password matching
+- Register new users in the database
+- Display error messages for invalid input
+### August 6th
+- Task: Develop Control Panel
+- Display list of all registered Guardians
+- Implement navigation to details and edit pages for each Guardian
+- Ensure only authenticated users can access the control panel
+### August 7th
+- Task: Develop Guardian Details Page
+- Display all details of a selected Guardian
+- Ensure details are read-only
+### August 8th
+- Task: Develop Edit Guardian Page
+- Create a form pre-filled with the selected Guardian's details
+- Implement functionality to update Guardian details in the database
+### August 9th
+- Task: Develop Register New Guardian Page
+- Create a form to input new Guardian details
+- Implement functionality to save new Guardian to the database
+- Ensure a cap of 36 Guardians is enforced
+- Display error messages for invalid input or exceeding the cap
+### August 10th
+- Task: Implement User Feedback
+- Display confirmation messages for successful sign-in, sign-up, Guardian registration, and updates
+- Ensure error messages are user-friendly and informative
+### August 11th
+- Task: Final Testing and Debugging
+- Test all functionalities to ensure they work as expected
+- Fix any bugs or issues found during testing
+### Stretch Goals (August 8th to August 11th)
+- Integrate Chat GPT API into registration system.
+- Add voice-over functionality for sign-in and Guardian registration confirmations.
 
  
 
