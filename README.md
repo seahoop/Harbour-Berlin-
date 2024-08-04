@@ -56,7 +56,7 @@ The Guardians are tasked with addressing only the most serious criminal activiti
 
 ## Stretch Goals
 1. Integrate Chat GPT API into registration system. 
-2. put voice over like when you sign into your account it say some cool stuff like "Welcome to Harbor-Berlin central command". 
+2. put voice over like when you sign into your account it say some cool stuff like "Welcome to Habo-Berlin central command". 
 3. When adding an new robot and saved succesfully say "welcome to the family atlas #33" things like that. 
 4. Password recovery through email 
 
