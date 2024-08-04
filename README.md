@@ -1,11 +1,11 @@
 # Project Choice 
-Harbour-Berlin(Guardian Regsitration System)
+Habo-Berlin(Guardian Regsitration System)
 
 # Project Description
 
-The Harbour-Berlin Guardian Registration System provides secured CRUD operations for Harbour-Berlin's cutting-edge data center. Harbour-Berlin is a state-of-the-art facility strategically located in the heart of Berlin, hosting three lines of Guardians: Atlas, Norma, and Clasper. These advanced Guardians collaborate with police units to strictly enforce law and order, ensuring peace and security in the region. Harbour-Berlin is meticulously designed to maintain 36 Guardians at all times, serving a population of 3.6 million in the city.
+The Habo-Berlin Guardian Registration System provides secured CRUD operations for Habo-Berlin's cutting-edge data center. Habo-Berlin is a state-of-the-art facility strategically located in the heart of Berlin, hosting three lines of Guardians: Atlas, Norma, and Clasper. These advanced Guardians collaborate with police units to strictly enforce law and order, ensuring peace and security in the region. Harbour-Berlin is meticulously designed to maintain 36 Guardians at all times, serving a population of 3.6 million in the city.
 
-The Guardians are tasked with addressing only the most serious criminal activities, such as armed robbery, hostage rescues, and terrorism. Due to the high-risk nature of their operations, Guardians frequently sustain damage and are sometimes destroyed. Harbour Industry, the manufacturer of the Guardians, continually innovates and integrates the latest technologies into their designs. Consequently, maintaining up-to-date records is of utmost importance for Harbour-Berlin. The secure CRUD functionality in the data center is crucial for the seamless operation of Harbour-Berlin, ensuring the Guardians are always equipped with the latest advancements to effectively perform their duties.
+The Guardians are tasked with addressing only the most serious criminal activities, such as armed robbery, hostage rescues, and terrorism. Due to the high-risk nature of their operations, Guardians frequently sustain damage and are sometimes destroyed. Habo Industry, the manufacturer of the Guardians, continually innovates and integrates the latest technologies into their designs. Consequently, maintaining up-to-date records is of utmost importance for Harbour-Berlin. The secure CRUD functionality in the data center is crucial for the seamless operation of Habo-Berlin, ensuring the Guardians are always equipped with the latest advancements to effectively perform their duties.
 
 
 
@@ -69,7 +69,7 @@ The Guardians are tasked with addressing only the most serious criminal activiti
 
 
 ### Landing page 
-- Write welcoming words, with Habour-Berlin logo and name. 
+- Write welcoming words, with Habo-Berlin logo and name. 
 - link for employee sign in, and an link for employee to sign up. 
 - if there is an question, chat gpt is there to help with API integration. 
 - Clickable and jumps to the directed page 
