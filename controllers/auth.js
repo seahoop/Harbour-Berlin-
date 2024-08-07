@@ -15,7 +15,7 @@ authRouter.get('/sign-in', (req, res) => {
 authRouter.get('/sign-out', (req, res) => {
     req.session.destroy((err) => {
         if (err) {
-            return err
+            return res.send('Error during sign-out.');
         }
         res.clearCookie('connect.sid');
         res.redirect('/guardian');
@@ -50,39 +50,31 @@ authRouter.post('/sign-up', async (req, res) => {
     }
 });
 
-
-
-authRouter.post('/new', async (req, res) => {
+authRouter.post('/sign-in', async (req, res) => {
     try {
-        const { name, weapon, defenseSystem, version, cyberSecurityVersion, aiHaboOperated } = req.body;
+        const user = await User.findOne({ username: req.body.username });
 
-        const newUser = new User({
-            name,
-            weapon,
-            defenseSystem,
-            version,
-            cyberSecurityVersion,
-            aiHaboOperated: aiHaboOperated === 'on',
-            isReadyforManagement: req.body.isReadyforManagement === 'on'
-        });
+        if (!user) {
+            return res.send('User does not exist or incorrect credentials.');
+        }
 
-        await newUser.save();
+        const validPassword = bcrypt.compareSync(req.body.password, user.password);
+        if (!validPassword) {
+            return res.send('Incorrect password.');
+        }
 
         req.session.user = {
-            name: newUser.name,
+            username: user.username
         };
 
         res.redirect('/');
     } catch (error) {
-        console.error('Error during registration:', error);
-        res.send('Error during registration.');
+        console.error('Error during sign-in:', error);
+        res.send('Error during sign-in.');
     }
 });
 
-
-
-
-//for management system new guardian registration
+// for management system new guardian registration
 const index = async (req, res) => {
     res.render("management/new");
 };
