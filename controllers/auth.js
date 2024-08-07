@@ -50,28 +50,42 @@ authRouter.post('/sign-up', async (req, res) => {
     }
 });
 
-authRouter.post('/sign-in', async (req, res) => {
+
+
+authRouter.post('/new', async (req, res) => {
     try {
-        const user = await User.findOne({ username: req.body.username });
+        const { name, weapon, defenseSystem, version, cyberSecurityVersion, aiHaboOperated } = req.body;
 
-        if (!user) {
-            return res.send('User either does not exist, or you have provided the wrong credentials');
-        }
+        const newUser = new User({
+            name,
+            weapon,
+            defenseSystem,
+            version,
+            cyberSecurityVersion,
+            aiHaboOperated: aiHaboOperated === 'on',
+            isReadyforManagement: req.body.isReadyforManagement === 'on'
+        });
 
-        const validPassword = bcrypt.compareSync(req.body.password, user.password);
-        if (!validPassword) {
-            return res.send('Error, the password is wrong!');
-        }
+        await newUser.save();
 
         req.session.user = {
-            username: user.username
+            name: newUser.name,
         };
 
         res.redirect('/');
     } catch (error) {
-        console.error('Was not able to sign in', error);
-        res.send('Was not able to sign in.');
+        console.error('Error during registration:', error);
+        res.send('Error during registration.');
     }
 });
 
+
+
+
+//for management system new guardian registration
+const index = async (req, res) => {
+    res.render("management/new");
+};
+
+export { index };
 export default authRouter;

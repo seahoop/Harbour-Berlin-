@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register a New Guardian</title>
+</head>
+<body>
+    <h1>Register a New Guardian</h1>
+    <form action="/management/new" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required>
+        <label for="weapon">Weapon:</label>
+        <input type="text" name="weapon" required>
+        <label for="defenseSystem">Defense System:</label>
+        <input type="text" name="defenseSystem" required>
+        <label for="version">Version:</label>
+        <input type="text" name="version" required>
+        <label for="cyberSecurityVersion">Cyber Security Version:</label>
+        <input type="text" name="cyberSecurityVersion" required>
+        <label for="aiHaboOperated">AI-HABO Operated:</label>
+        <input type="checkbox" name="aiHaboOperated">
+        <button type="submit">Register Guardian</button>
+    </form>
+    <a href="/">Back to management portal</a>
+</body>
+</html>
