@@ -6,7 +6,7 @@ import mongoose from 'mongoose';
 import morgan from 'morgan';
 import methodOverride from 'method-override';
 import session from 'express-session';
-import Management from './models/management.js';  // Ensure Management model is imported
+import Management from './models/management.js'; 
 import authRouter from './controllers/auth.js';
 
 const app = express();
@@ -29,7 +29,6 @@ mongoose.connection.on("connected", () => {
     console.log(`Connected to MongoDB ${mongoose.connection.name}.`);
 });
 
-
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
@@ -40,8 +39,29 @@ app.get('/guardian', async (req, res) => {
     res.render("2index");
 });
 
+app.get('/management', async (req, res) => {
+    try {
+        const management = await Management.find({});
+        res.render("management/index", { management });
+    } catch (error) {
+        console.error('Error fetching management data:', error);
+        res.send('Error fetching management data.');
+    }
+});
+
 app.get('/management/new', async (req, res) => {
     res.render("management/new");
+});
+
+// Add this route to handle displaying individual management items
+app.get('/management/show', async (req, res) => {
+    try {
+        const management = await Management.find({});
+        res.render("management/show", { management });
+    } catch (error) {
+        console.error('Error fetching management data:', error);
+        res.send('Error fetching management data.');
+    }
 });
 
 app.post('/management/new', async (req, res) => {
