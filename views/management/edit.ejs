@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit <%= management.name%></title>
+</head>
+<body>
+    <h1>Edit <%= management.name%></h1>
+    <form action="/management/<%= management._id %>?_method=PUT" method="POST">
+        <!--Name below -->
+    <label for="name">Name:</label>
+    <input type="text" name="name" value="<%= management.name %>" required>
+    <!---->
+
+
+
+    </form>
+
+
+
+    <a href="/">Back to management Panel</a>
+    
+</body>
+</html>

@@ -64,6 +64,25 @@ app.get('/management/show', async (req, res) => {
     }
 });
 
+app.get('/management/:managementId', async(req, res) =>{
+    const foundManagement = await Management.findById(req.params.managementId);
+    res.render('management/show2', {management: foundManagement});
+});
+
+//for editing below 
+app.get('/management/:managementId/edit', async(req, res) =>{
+    const foundManagement = await Management.findById(req.params.managementId);
+    res.render("management/edit", { management: foundManagement });
+});
+
+//delete guardian function below 
+app.delete("/management/:managementId", async(req, res) =>{
+    await Management.findByIdAndDelete(req.params.managementId);
+    res.redirect('/management/show')
+})
+
+
+//
 app.post('/management/new', async (req, res) => {
     try {
         const { name, weapon, defenseSystem, version, cyberSecurityVersion, aiHaboOperated } = req.body;
