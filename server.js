@@ -81,6 +81,26 @@ app.delete("/management/:managementId", async(req, res) =>{
     res.redirect('/management/show')
 })
 
+//for update guardian
+app.put("/management/:managementId", async (req, res) =>{
+    try {
+        const {name, weapon, defenseSystem, version, cyberSecurityVersion, aiHaboOperated } = req.body;
+        const updateManagement = {
+            name,
+            weapon,
+            defenseSystem,
+            version,
+            cyberSecurityVersion,
+            aiHaboOperated: aiHaboOperated === 'on'
+        };
+    
+    await Management.findByIdAndUpdate(req.params.managementId, req.body);
+    res.redirect(`/management/${req.params.managementId}`);
+    } catch (error) {
+        console.error('Error updating management data:', error);
+        res.send('Error updating management data.');
+    }
+});
 
 //
 app.post('/management/new', async (req, res) => {

@@ -11,13 +11,25 @@
         <!--Name below -->
     <label for="name">Name:</label>
     <input type="text" name="name" value="<%= management.name %>" required>
-    <!---->
+    <!--weapon below-->
+    <label for="weapon">Weapon:</label>
+    <input type="text" name="weapon" value="<%= management.weapon %>" required>
+    <!--defenseSystem below-->
+    <label for="defenseSystem">Defense System: </label>
+    <input type="text" name="defenseSystem" value="<%= management.defenseSystem %>" required>
+    <!--Version below-->
+    <label for="version">Version:</label>
+    <input type="text" name="version" value="<%= management.version %>" required>
+    <!--Cyber Security Version-->
+    <label for="cyberSecurityVersion">Cyber Security Version:</label>
+    <input type="text" name="cyberSecurityVersion" value="<%= management.cyberSecurityVersion %>" required>
+    <!--AI-HABO-OPERATED-->
+    <label for="aiHaboOperated">AI Habo Operated</label>
+    <input type="checkbox" name="aiHaboOperated" value="<%= management.aiHaboOperated%>">
+   
 
-
-
-    </form>
-
-
+    <p><button type="submit">Update Guardian</button></p>
+</form>
 
     <a href="/">Back to management Panel</a>
     
