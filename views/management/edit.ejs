@@ -25,7 +25,7 @@
     <input type="text" name="cyberSecurityVersion" value="<%= management.cyberSecurityVersion %>" required>
     <!--AI-HABO-OPERATED-->
     <label for="aiHaboOperated">AI Habo Operated</label>
-    <input type="checkbox" name="aiHaboOperated" value="<%= management.aiHaboOperated%>">
+    <input type="checkbox" name="aiHaboOperated" <%= management.aiHaboOperated ? 'checked' : ''%>>
    
 
     <p><button type="submit">Update Guardian</button></p>
