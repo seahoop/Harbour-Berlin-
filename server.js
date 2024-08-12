@@ -105,6 +105,9 @@ app.put("/management/:managementId", async (req, res) =>{
 
 //
 app.post('/management/new', async (req, res) => {
+    // Grab userId from the session token
+    const userId = req.session.user._id;
+
     try {
         const { name, weapon, defenseSystem, version, cyberSecurityVersion, aiHaboOperated } = req.body;
         const newManagement = new Management({
@@ -113,7 +116,8 @@ app.post('/management/new', async (req, res) => {
             defenseSystem,
             version,
             cyberSecurityVersion,
-            aiHaboOperated: aiHaboOperated === 'on'
+            aiHaboOperated: aiHaboOperated === 'on',
+            userId // Add user ID here
         });
 
         await newManagement.save();
@@ -124,10 +128,12 @@ app.post('/management/new', async (req, res) => {
     }
 });
 
+
 app.use('/guardian', authRouter);
 
+
 app.listen(port, () => {
-    console.log(`Listening on port ${port}`);
+    console.log(`Server is listening on port ${port}`);
 });
 
 
