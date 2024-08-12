@@ -147,7 +147,14 @@ The Guardians are tasked with addressing only the most serious criminal activiti
 - Integrate Chat GPT API into registration system.
 - Add voice-over functionality for sign-in and Guardian registration confirmations.
 
- 
+# technology used
+javascript
+css
+mongodb
+ejs
+heroku hosting
+html
+markdown
 
 # Screenshot of the Registration system
 ![some alt text](https://i.postimg.cc/wxZCGD3M/Screenshot-2024-08-11-at-11-19-23-PM.png)
