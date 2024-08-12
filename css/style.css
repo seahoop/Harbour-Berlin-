@@ -615,3 +615,38 @@ a:active {
     justify-content: center;
     margin-bottom: 10px;
 }
+
+/*-----------------------------------------------*/
+#habo-42{
+    border: rgb(24, 20, 20) solid 7px;
+    font-size: 3rem;
+    color: white;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+   margin-bottom: 20px;
+}
+
+#habo-43{
+    border: rgb(24, 20, 20) solid 7px;
+    font-size: 3rem;
+    color: white;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-bottom:70px;
+}
+
+#habo-44, #habo-45, #habo-46, #habo-47, #habo-48, #habo-49{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
