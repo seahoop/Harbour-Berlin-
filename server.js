@@ -1,4 +1,4 @@
-/*import dotenv from "dotenv";
+import dotenv from "dotenv";
 dotenv.config({ path: '.env' });
 
 import express from 'express';
@@ -15,6 +15,7 @@ const port = process.env.PORT || 2000;
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 app.use(morgan('dev'));
+app.use('/css', express.static('css'));
 app.use(session({
     secret: process.env.SESSION_SECRET,
     resave: false,
@@ -128,10 +129,10 @@ app.use('/guardian', authRouter);
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 });
-*/
 
 
 
+/*
 
 import dotenv from "dotenv";
 import axios from "axios";
@@ -174,7 +175,7 @@ app.set("view engine", "ejs");
 /*app.get("/", (req, res) => {
   res.render("index.ejs", { user: req.session.user });
 });
-*/
+
 app.get('/guardian', async (req, res) => {
     res.render("2index");
 });
@@ -353,3 +354,4 @@ app.post('/management/new', async (req, res) => {
 });
 
 app.use('/guardian', authRouter);
+*/

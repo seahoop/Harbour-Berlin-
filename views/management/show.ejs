@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Management Index</title>
 </head>
 <body>
+
+    <section id="habo-21">
     <h1>Guardians List</h1>
+    </section>
+
+    <section id="habo-22">
     <ul>
         <% management.forEach(item => { %>
             <li><a href="/management/<%= item._id %>"><%= item.name %></a></li>
         <% }); %>
     </ul>
+    </section>
+
+    <section id="habo-23">
     <p> <a href="/">Back To Management</a></p>
+    </section>
+
+
 </body>
 </html>

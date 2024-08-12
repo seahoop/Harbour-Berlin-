@@ -1,34 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guardian Details</title>
 </head>
 <body>
+    <section id="habo-24">
     <h1>Guardian Details</h1>
+    </section>  
+
+    <section id="habo-25">
     <p>Name: <%= management.name %></p>
+    </section>
+
+    <section id="habo-26">
     <p>Weapon: <%= management.weapon %></p>
+    </section> 
+    
+    <section id="habo-27">
     <p>Defense System: <%= management.defenseSystem %></p>
+    </section>
+
+    <section id="habo-28">
     <p>Version: <%= management.version %></p>
+    </section>
+
+    <section id="habo-29">
     <p>Cyber Security Version: <%= management.cyberSecurityVersion %></p>
+    </section>
+
+    <section id="habo-30">
   <p>AI Habo Operated: <%= management.aiHaboOperated %></p>
+    </section>
+
+
+    </body>
+   
 
 
 
 
      <!--Editing below-->
-
+    <section id="habo-31">
      <a href="/management/<%= management._id%>/edit">Edit Guardian <%= management.name%></a>
+    </section>
+
+    <section id="habo-32">
     <form action="/management/<%=management._id%>?_method=DELETE" method="POST">
         <button type="submit">Terminate Guardian </button>
 
     </form>
-  
+</section>  
 
-
+    <section id="habo-33">
     <!--backto management below-->
     <p><a href="/">Back to Management Panel</a></p>
+</section>
   
 </body>
 </html>

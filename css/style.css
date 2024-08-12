@@ -1,0 +1,617 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+
+
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    background-image: url(https://i.postimg.cc/nzyrS6qh/DALL-E-2024-08-11-20-26-10-A-text-only-logo-design-for-Habo-Industry-with-no-visual-elements-fo.webp);
+    
+}
+a {
+    color: white; /* Default link color */
+    text-decoration: none; /* Removes the underline from links, optional */
+}
+
+a:visited {
+    color: white; /* Ensures visited links are also black */
+}
+
+a:hover {
+    color: white; /* Keeps the hover state black as well */
+}
+
+a:active {
+    color: white; /* Keeps the active state black */
+}
+
+/*-------------------------------------------------------------*/
+/* for 2index.ejs */
+#habo-title {
+    border: rgb(24, 20, 20) solid 7px;
+    font-size: 3rem;
+    color: white;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+   margin-bottom: 20px;
+
+}
+
+/* for 2index.ejs */
+#habo-intro{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+
+/* for 2index.ejs */
+#Susi{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+
+}
+
+/* for 2index.ejs */
+#Susi2{
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 10px;
+}
+
+
+/*------------------------------------------------------------------------*/
+
+/*for sign-in.ejs*/
+#habo-2{
+    border: rgb(24, 20, 20) solid 7px;
+    font-size: 3rem;
+    color: white;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+   margin-bottom: 20px;
+}
+
+/*for sign-in.ejs*/
+#habo-3{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#habo-4{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 150px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#habo-5{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#habo-6{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/*----------------------------------------------*/
+/*index.ejs */
+#habo-7{
+    border: rgb(24, 20, 20) solid 7px;
+    font-size: 3rem;
+    color: white;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+   margin-bottom: 20px;
+
+}
+
+#habo-8{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#habo-9{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#habo-10{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#habo-11{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 12px;
+    border-radius: 5px;
+    margin-top: 50px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+
+
+/*----------------------------------------------*/
+
+#habo-12{
+    border: rgb(24, 20, 20) solid 7px;
+    font-size: 3rem;
+    color: white;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+   margin-bottom: 20px;
+}
+
+#habo-13{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#habo-14{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#habo-15{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#habo-16{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+
+#habo-17{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#habo-18{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#habo-19{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#habo-20{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+/*---------------------------------------------------------------*/
+/*show.ejs*/
+#habo-21{
+    border: rgb(24, 20, 20) solid 7px;
+    font-size: 3rem;
+    color: white;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+   margin-bottom: 70px;
+}
+
+#habo-22{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#habo-23{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+
+/*---------------------------------------------------------------*/
+/*show2.ejs*/
+
+#habo-24{ 
+    border: rgb(24, 20, 20) solid 7px;
+    font-size: 3rem;
+    color: white;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+   margin-bottom: 70px;
+
+}
+
+#habo-25{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+
+#habo-26{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+
+#habo-27{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#habo-28{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#habo-29{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#habo-30{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#habo-31{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#habo-32{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#habo-33{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+/*---------------------------------------------------------------*/
+/*edit.ejs*/
+
+#habo-34{
+    border: rgb(24, 20, 20) solid 7px;
+    font-size: 3rem;
+    color: white;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+   margin-bottom: 70px;
+}
+
+#habo-35{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#habo-36{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#habo-37{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#habo-38{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#habo-39{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#habo-40{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#habo-41{
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: rgb(27, 20, 20);
+    border: black solid 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    justify-content: center;
+    margin-bottom: 10px;
+}

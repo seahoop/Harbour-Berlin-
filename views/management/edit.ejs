@@ -1,37 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit <%= management.name%></title>
 </head>
 <body>
+    <section id="habo-34">
     <h1>Edit <%= management.name%></h1>
+    </section>
+    
     <form action="/management/<%= management._id %>?_method=PUT" method="POST">
-        <!--Name below -->
+    
+    <!--Name below -->
+    <section id="habo-35">
     <label for="name">Name:</label>
     <input type="text" name="name" value="<%= management.name %>" required>
-    <!--weapon below-->
+    </section>
+
+   
+     <!--weapon below-->
+    <section id="habo-36">
     <label for="weapon">Weapon:</label>
     <input type="text" name="weapon" value="<%= management.weapon %>" required>
+    </section>
+
+    
     <!--defenseSystem below-->
+    <section id="habo-37">
     <label for="defenseSystem">Defense System: </label>
     <input type="text" name="defenseSystem" value="<%= management.defenseSystem %>" required>
+    </section>
+
     <!--Version below-->
+    <section id="habo-38">
     <label for="version">Version:</label>
     <input type="text" name="version" value="<%= management.version %>" required>
+    </section>
+
     <!--Cyber Security Version-->
+    <section id="habo-39">
     <label for="cyberSecurityVersion">Cyber Security Version:</label>
     <input type="text" name="cyberSecurityVersion" value="<%= management.cyberSecurityVersion %>" required>
+    </section>
     <!--AI-HABO-OPERATED-->
-    <label for="aiHaboOperated">AI Habo Operated</label>
+   <!-- <label for="aiHaboOperated">AI Habo Operated</label>
     <input type="checkbox" name="aiHaboOperated" <%= management.aiHaboOperated ? 'checked' : ''%>>
-   
-
+    -->
+    <section id="habo-40">
     <p><button type="submit">Update Guardian</button></p>
+    </section>
 </form>
-
+    <section id="habo-41">
     <a href="/">Back to management Panel</a>
-    
+</section>
 </body>
 </html>
