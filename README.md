@@ -11,7 +11,7 @@ The Guardians are tasked with addressing only the most serious criminal activiti
 
 
 # File Structure Of the Proposed Project 
-![some alt text](https://i.postimg.cc/MZb8dj8P/3751722611366-pic.jpg)
+![some alt text](https://i.postimg.cc/kGJdjmGX/Screenshot-2024-08-12-at-10-23-36-AM.png)
 
 
 # Visual of Guardians 
