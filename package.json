@@ -4,10 +4,28 @@
     "nodemon": "^3.1.4"
   },
   "dependencies": {
+    "axios": "^1.7.3",
+    "bcrypt": "^5.1.1",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "method-override": "^3.0.0",
     "mongoose": "^8.5.2",
-    "morgan": "^1.10.0"
-  }
+    "morgan": "^1.10.0",
+    "openai": "^4.55.3"
+  },
+  "name": "harbour-berlin-",
+  "version": "1.0.0",
+  "description": "Habo-Berlin(Guardian Regsitration System)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js -e css,ejs,js,json"
+  },
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
