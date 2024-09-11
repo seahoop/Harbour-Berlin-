@@ -24,6 +24,11 @@ const managementSchema = new mongoose.Schema({
     aiHaboOperated: {
         type: Boolean,
         required: false
+    },
+    userId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User',
+        required: true
     }
 });
 
